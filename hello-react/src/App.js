@@ -1,9 +1,8 @@
 import React from "react";
-import "./App.css";
+import MyComponent from "./MyComponent";
 
-function App() {
-  const name = "리액트";
-  return <>/* 주석 */</>;
-}
+const App = () => {
+  return <MyComponent name="리액트">리액트의 아들</MyComponent>;
+};
 
 export default App;
