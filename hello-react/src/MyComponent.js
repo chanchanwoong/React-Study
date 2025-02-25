@@ -1,18 +1,18 @@
 import React from "react";
 
-// 화살표 함수를 이용한 함수형 컴포넌트
 const MyComponent = (props) => {
+  /*
+    구조분해 할당으로 props 처리
+    - 기존에는 props.name, props.children 식으로 처리했으나, 
+      구조분해 할당으로 간단하게 props 처리 가능
+  */
+  const { name, children } = props;
   return (
     <div>
-      안녕하세요. 제 이름은 {props.name} 입니다. <br />
-      children 값은 {props.children} 입니다.
+      안녕하세요. 제 이름은 {name} 입니다. <br />
+      children 값은 {children} 입니다.
     </div>
   );
-};
-
-// 더 이상 defaultProps는 지원안함
-MyComponent.defaultProps = {
-  name: "기본 이름",
 };
 
 export default MyComponent;
