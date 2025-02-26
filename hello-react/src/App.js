@@ -1,8 +1,8 @@
 import React from "react";
-import Say from "./Say";
+import EventPractice from "./EventPractice";
 
 const App = () => {
-  return <Say initialMessage="초기 메시지" />;
+  return <EventPractice />;
 };
 
 export default App;
