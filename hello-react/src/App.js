@@ -1,8 +1,8 @@
 import React from "react";
-import MyComponent from "./MyComponent";
+import Say from "./Say";
 
 const App = () => {
-  return <MyComponent name="리액트">리액트의 아들</MyComponent>;
+  return <Say initialMessage="초기 메시지" />;
 };
 
 export default App;
